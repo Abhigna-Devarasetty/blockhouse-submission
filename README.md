@@ -99,7 +99,7 @@ The dataset was split into training and validation sets, with 80% of the data us
 To optimize the model's performance, several hyperparameters were fine-tuned:
 
 - **Learning Rate**: Set initially to 5e-5, this parameter controls the step size of the model's weight updates during training.
-- **Batch Size**: A batch size of 16 was chosen, balancing computational efficiency with the need to provide the model with sufficient data in each iteration.
+- **Batch Size**: A batch size of 128 was chosen, balancing computational efficiency with the need to provide the model with sufficient data in each iteration.
 - **Early Stopping**: This callback was used to halt training if the model's performance on the validation set did not improve after five consecutive epochs, preventing overfitting.
 - **Learning Rate Scheduler**: The learning rate was reduced by a factor of 0.5 if the validation loss plateaued for three epochs, allowing the model to fine-tune its learning process as it converged.
 
